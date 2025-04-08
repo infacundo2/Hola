@@ -1,0 +1,115 @@
+﻿/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #0000FF, #00FF00); /* Degradado de azul a verde */
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el contenedor del botón */
+.button-container {
+    width: 50px;  /* Ajusta el ancho del contenedor */
+    height: 100px; /* Ajusta la altura del contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra el botón tanto horizontal como verticalmente */
+}
+
+/* Estilo para el botón "Haz clic" con la imagen de Ganyu */
+#clickButton {
+    padding: 0;
+    background-image: url('C:/Users/yop/source/repos/Solution1/Arte_de_personaje_Ganyu.webp');
+    background-size: cover; /* Ajusta la imagen para que cubra todo el botón sin distorsionarse */
+    background-position: center;  /* Centra la imagen dentro del botón */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 50px; /* Ajusta el ancho del botón */
+    height: 100px; /* Ajusta la altura del botón */
+    display: inline-block; /* Asegura que se ajusta al contenedor */
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño final */
+}
+
+/* Efecto hover para el botón "Haz clic" */
+#clickButton:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para los botones de mejora (sin imagen) */
+.upgrade button {
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.upgrade button:hover {
+    background-color: #DDDDDD;
+}
+
+/* Estilo para el contenedor de los personajes */
+/* Contenedor de personajes */
+#characterContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+/* Estilo para la imagen del personaje */
+#characterImage {
+    width: 100px;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    margin-bottom: 10px; /* Espacio entre las filas de personajes */
+}
+
+/* Estilo para el botón de compra de personaje */
+#buyCharacter {
+    background-color: #FFEB3B; /* Color amarillo para diferenciarlo */
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#buyCharacter:hover {
+    background-color: #FFC107; /* Color de hover */
+}
+
+.info {
+    margin-top: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+.upgrade {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+
+/* Estilo para mostrar los puntos por clic */
+#pointsPerClick {
+    font-size: 30px;
+    font-weight: bold;
+    color: yellow;
+    margin-top: 10px;
+}

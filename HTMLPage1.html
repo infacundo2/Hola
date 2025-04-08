@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Clicker - Ganyu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Juego Clicker</h1>
+    <p>Haz clic en Ganyu para ganar Protogemas!</p>
+
+    <div class="button-container">
+        <button class="button" id="clickButton"></button>
+    </div>
+
+    <div class="info">
+        <p>Protogemas: <span id="score">0</span></p>
+        <p id="pointsPerClick">Protogemas por clic: 1</p> <!-- Aquí se mostrará los puntos por clic -->
+    </div>
+
+    <div class="upgrade">
+        <h2>Mejoras</h2>
+        <button id="multiplierUpgrade" class="button">Mejorar multiplicador (Costo: 10 Protogemas)</button>
+        <button id="autoclickUpgrade" class="button">Mejorar autoclic (Costo: 50 Protogemas)</button>
+    </div>
+
+    <div class="info">
+        <p>Multiplicador: <span id="multiplier">1</span></p>
+        <p>Autoclics por segundo: <span id="autoclick">0</span></p>
+    </div>
+
+    <!-- Contenedor para la imagen de Ganyu y personajes comprados -->
+    <div id="characterContainer">
+        <div id="clickButtonContainer">
+            <button class="button" id="clickButton"></button>
+        </div>
+    </div>
+
+    <!-- Botón para comprar el personaje -->
+    <button id="buyCharacter">Comprar personaje</button>
+
+    <script src="game.js"></script>
+</body>
+</html>

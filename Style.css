@@ -1,0 +1,67 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #0000FF, #00FF00); /* Degradado de azul a verde */
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el botón "Haz clic" con la imagen de Ganyu */
+#clickButton {
+    padding: 0;
+    background-image: url('C:/Users/yop/source/repos/Solution1/Arte_de_personaje_Ganyu.webp'); /* Asegúrate de que esta ruta sea correcta */
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Efecto hover para el botón "Haz clic" */
+#clickButton:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para los botones de mejora (sin imagen) */
+.upgrade button {
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.upgrade button:hover {
+    background-color: #DDDDDD;
+}
+
+.info {
+    margin-top: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+.upgrade {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+/* Estilo para mostrar los puntos por clic */
+#pointsPerClick {
+    font-size: 30px;
+    font-weight: bold;
+    color: yellow;
+    margin-top: 10px;
+}
