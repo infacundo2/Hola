@@ -90,7 +90,7 @@ multiplierUpgradeButton.addEventListener('click', () => {
         // No restamos puntos aquí, solo mostramos el costo y actualizamos el texto
         score -= currentCostMultiplier
         updateDisplay();
-        multiplier += 1;
+        multiplier += 1000;
         // Actualiza el costo del botón
         updateButtonCosts();
         updateDisplay();
@@ -154,7 +154,7 @@ buyCharacterButton.addEventListener('click', () => {
 
         // Creamos la nueva imagen del personaje
         const newCharacterImage = document.createElement('div');
-        newCharacterImage.style.backgroundImage = `url('C:/Users/yop/source/repos/Solution1/${characterImages[randomIndex]}')`; 
+        newCharacterImage.style.backgroundImage = `url('images/${characterImages[randomIndex]}')`; 
         newCharacterImage.style.width = '100px'; // Tamaño de la imagen del personaje
         newCharacterImage.style.height = '200px';
         newCharacterImage.style.backgroundSize = 'contain';

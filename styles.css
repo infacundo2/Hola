@@ -1,20 +1,22 @@
-﻿/* Estilo para el cuerpo de la página */
+﻿/* Centrado adecuado de la página */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la pantalla */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Cambié de 'center' a 'flex-start' */
     align-items: center;
-    background: linear-gradient(to bottom, #0000FF, #00FF00); /* Degradado de azul a verde */
+    background: linear-gradient(to bottom, #0000FF, #00FF00);
 }
 
+/* Asegurar que el título no se vea cubierto */
 h1 {
     color: white;
     margin-bottom: 20px;
+    padding-top: 20px; /* Agregar un pequeño espacio para evitar que el título se quede pegado al borde superior */
 }
 
 /* Estilo para el contenedor del botón */
@@ -28,8 +30,10 @@ h1 {
 
 /* Estilo para el botón "Haz clic" con la imagen de Ganyu */
 #clickButton {
+    position: relative;
+     z-index: 10;
     padding: 0;
-    background-image: url('C:/Users/yop/source/repos/Solution1/Arte_de_personaje_Ganyu.webp');
+    background-image: url('images/Arte_de_personaje_Ganyu.webp');
     background-size: cover; /* Ajusta la imagen para que cubra todo el botón sin distorsionarse */
     background-position: center;  /* Centra la imagen dentro del botón */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
